@@ -1,0 +1,19 @@
+@mixin border-radius-all($effect) {
+  @include border-top-radius($effect);
+  @include border-bottom-radius($effect);
+}
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media screen and (min-width: $breakpoint-desktop) {  @content ; }
+  }
+  @else if $point == only-tablet {
+    @media screen and (min-width:$breakpoint-tablet) and (max-width: $breakpoint-desktop) { @content ; }
+  }
+  @else if $point == tablet {
+    @media screen and (min-width: $breakpoint-tablet) { @content ; }
+  }
+  @else if $point == phone {
+    @media screen and (max-width: $breakpoint-tablet) { @content ; }
+  }
+}

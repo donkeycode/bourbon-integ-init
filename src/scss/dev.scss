@@ -1,0 +1,33 @@
+//Debug grid
+//$visual-grid: true;
+
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon.scss";
+@import "../../bower_components/neat/app/assets/stylesheets/neat.scss";
+
+@import "variables";
+@import "mixins";
+
+.dev--debug-responsive {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10000;
+    color: white;
+    &:after {
+        min-width: 400px;
+        content: "";
+        padding: 10px 20px;
+        @include breakpoint(desktop) {
+            content: "desktop - min width #{$breakpoint-tablet}";
+            background: red;
+        }
+        @include breakpoint(only-tablet) {
+            content: "only-tablet - width between #{$breakpoint-desktop} and #{$breakpoint-tablet} (ou tablet min-width #{$breakpoint-tablet})";
+            background: green;
+        }
+        @include breakpoint(phone) {
+            content: "mobile - width max #{$breakpoint-tablet} ";
+            background: blue;
+        }
+    }
+}
