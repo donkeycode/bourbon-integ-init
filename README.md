@@ -1,4 +1,5 @@
-Bourbon Integration init - Init for integration project using Bourbon/Neat SASS
+#Bourbon Integration init
+##Init for integration project using Bourbon/Neat SASS
 
 Docs SASS : http://sass-lang.com/guide
 
