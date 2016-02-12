@@ -1,0 +1,32 @@
+.donkey-grid {
+  @include outer-container;
+
+  @for $i from 1 through 12 {
+    .donkey-grid__cell-#{$i} {
+      @include span-columns($i);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .donkey-grid__cell-offset-#{$i} {
+      @include shift($i);
+    }
+  }
+}
+
+.hide-destop {
+  @include breakpoint(desktop) {
+    display: none;
+  }
+}
+
+.hide-tablet {
+  @include breakpoint(only-tablet) {
+    display: none;
+  }
+}
+
+.hide-phone {
+  @include breakpoint(phone) {
+    display: none;
+  }
+}

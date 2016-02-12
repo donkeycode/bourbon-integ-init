@@ -1,0 +1,29 @@
+{
+  "name": "bourbon-integ-init",
+  "version": "1.0.0",
+  "description": "Init for integration project using Bourbon/Neat SASS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donkeycode/bourbon-integ-init.git"
+  },
+  "keywords": [
+    "fcgvhjbkljhgfcgvhjkl"
+  ],
+  "author": "Sophie LONGO <sophie@donkeycode.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donkeycode/bourbon-integ-init/issues"
+  },
+  "homepage": "https://github.com/donkeycode/bourbon-integ-init#readme",
+  "dependencies": {
+    "browser-sync": "^2.9.11",
+    "connect-modrewrite": "^0.8.2",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4"
+  }
+}
