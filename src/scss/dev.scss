@@ -18,15 +18,15 @@
         content: "";
         padding: 10px 20px;
         @include breakpoint(desktop) {
-            content: "desktop - min width 840";
+            content: "desktop - min width #{$breakpoint-tablet}";
             background: red;
         }
         @include breakpoint(only-tablet) {
-            content: "only-tablet - width between 839 and 480 (ou tablet min-width 480)";
+            content: "only-tablet - width between #{$breakpoint-desktop} and #{$breakpoint-tablet} (ou tablet min-width #{$breakpoint-tablet})";
             background: green;
         }
         @include breakpoint(phone) {
-            content: "mobile - width max 479";
+            content: "mobile - width max #{$breakpoint-tablet} ";
             background: blue;
         }
     }
