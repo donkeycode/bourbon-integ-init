@@ -21,7 +21,7 @@
   "homepage": "https://github.com/donkeycode/bourbon-integ-init#readme",
   "dependencies": {
     "browser-sync": "^2.9.11",
-    "connect-modrewrite": "^0.8.2",
+    "connect-modrewrite": "^0.10.2",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.4"
