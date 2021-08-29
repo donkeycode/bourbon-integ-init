@@ -4,7 +4,9 @@
   "description": "Init for integration project using Bourbon/Neat SASS",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -24,6 +26,8 @@
     "connect-modrewrite": "^0.8.2",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4"
-  }
+    "gulp-sass": "^2.0.4",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
