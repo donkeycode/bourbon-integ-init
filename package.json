@@ -24,6 +24,6 @@
     "connect-modrewrite": "^0.8.2",
     "del": "^2.0.2",
     "gulp": "^3.9.0",
-    "gulp-sass": "^2.0.4"
+    "gulp-sass": "^5.0.0"
   }
 }
